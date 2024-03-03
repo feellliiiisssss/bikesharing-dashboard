@@ -7,8 +7,8 @@ import datetime
 import numpy as np
 
 #load bikeDay
-bikeDay = pd.read_excel('bikeRental.xlsx', sheet_name='day')
-bikePeriod = pd.read_excel('bikeRental.xlsx', sheet_name='period')
+bikeDay = pd.read_excel('dashboard/bikeRental.xlsx', sheet_name='day')
+bikePeriod = pd.read_excel('dashboard/bikeRental.xlsx', sheet_name='period')
 
 def sidebar(bikeDay):
     bikeDay['dteday'] = pd.to_datetime(bikeDay['dteday'])
